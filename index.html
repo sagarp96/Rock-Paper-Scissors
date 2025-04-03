@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        
+        <div class="score-board">
+            <div class="score">
+                <p>Player</p>
+                <h2 id="player-score">0</h2>
+            </div>
+            <div class="score">
+                <p>Computer</p>
+                <h2 id="computer-score">0</h2>
+            </div>
+        </div>
+
+        <div class="result">
+            <p id="result-text">Choose your move!</p>
+        </div>
+
+        <div class="choices">
+            <button class="choice-btn" id="rock">
+                <i class="fas fa-hand-rock"></i>
+                <span>Rock</span>
+            </button>
+            <button class="choice-btn" id="paper">
+                <i class="fas fa-hand-paper"></i>
+                <span>Paper</span>
+            </button>
+            <button class="choice-btn" id="scissors">
+                <i class="fas fa-hand-scissors"></i>
+                <span>Scissors</span>
+            </button>
+        </div>
+
+        <div class="moves">
+            <div class="move">
+                <p>Your Move</p>
+                <i id="player-move" class="fas fa-question"></i>
+            </div>
+            <div class="move">
+                <p>Computer Move</p>
+                <i id="computer-move" class="fas fa-question"></i>
+            </div>
+        </div>
+
+        <button id="reset-btn">Reset Game</button>
+    </div>
+    <script src="logic.js"></script>
 </body>
 </html>
